@@ -1,0 +1,1 @@
+<h1>Xin Chào {{$name}}. Đây là mail xác nhận đăng nhập :>>></h1>

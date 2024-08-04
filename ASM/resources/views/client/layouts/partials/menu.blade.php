@@ -39,7 +39,7 @@
 
                         <a class="dropdown-item" href="author.html">Author</a>
 
-                        <a class="dropdown-item" href="author-single.html">Author Single</a>
+                        {{-- <a class="dropdown-item" href="author-single.html">Author Single</a>
 
                         <a class="dropdown-item" href="advertise.html">Advertise</a>
 
@@ -57,7 +57,7 @@
 
                         <a class="dropdown-item" href="terms-conditions.html">Terms Conditions</a>
 
-                        <a class="dropdown-item" href="404.html">404 Page</a>
+                        <a class="dropdown-item" href="404.html">404 Page</a> --}}
 
                     </div>
                 </li>
@@ -70,8 +70,8 @@
 
         <div class="order-2 order-lg-3 d-flex align-items-center">
             <select class="m-2 border-0 bg-transparent" id="select-language">
-                <option id="en" value="" selected>En</option>
-                <option id="fr" value="">Fr</option>
+                <option id="en" value="" selected>Login</option>
+                {{-- <option id="fr" value="">Fr</option> --}}
             </select>
 
             <!-- search -->

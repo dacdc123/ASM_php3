@@ -1,9 +1,9 @@
 <div class="container">
     <div class="row">
         <div class="col-lg-9 mx-auto">
-            <h1 class="mb-5">What Would You <br> Like To Read Today?</h1>
+            <h1 class="mb-5">Hôm nay  <br> Bạn thế nào ?</h1>
             <ul class="list-inline widget-list-inline">
-                <li class="list-inline-item"><a href="tags.html">City</a></li>
+                {{-- <li class="list-inline-item"><a href="tags.html">City</a></li>
                 <li class="list-inline-item"><a href="tags.html">Color</a></li>
                 <li class="list-inline-item"><a href="tags.html">Creative</a></li>
                 <li class="list-inline-item"><a href="tags.html">Decorate</a></li>
@@ -17,7 +17,7 @@
                 <li class="list-inline-item"><a href="tags.html">Taste</a></li>
                 <li class="list-inline-item"><a href="tags.html">Tasty</a></li>
                 <li class="list-inline-item"><a href="tags.html">Vlog</a></li>
-                <li class="list-inline-item"><a href="tags.html">Wow</a></li>
+                <li class="list-inline-item"><a href="tags.html">Wow</a></li> --}}
             </ul>
         </div>
     </div>

@@ -1,5 +1,10 @@
 <?php
 
+use App\Http\Controllers\AdminController;
+use App\Http\Controllers\AuthenController;
+use App\Http\Controllers\MemberController;
+use App\Http\Middleware\IsAdmin;
+use App\Http\Middleware\IsMember;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Route;
 
@@ -18,3 +23,22 @@ Route::get('/', function () {
     
     return view('client.index');
 });
+
+
+Route::get('login',  [AuthenController::class, 'showFormLogin'])->name('login');
+Route::post('login',  [AuthenController::class, 'handleLogin']);
+
+
+Route::get('register',  [AuthenController::class, 'showFormRegister'])->name('register');
+Route::post('register',  [AuthenController::class, 'handleRegister']);
+
+Route::post('logout',  [AuthenController::class, 'logout'])->name('logout');
+
+Route::get('member', [MemberController::class, 'dashboard'])
+    ->name('member.dashboard')
+    ->middleware('auth', IsMember::class);
+
+
+Route::get('admin', [AdminController::class, 'dashboard'])
+    ->name('admin.dashboard')
+    ->middleware('auth', IsAdmin::class);
